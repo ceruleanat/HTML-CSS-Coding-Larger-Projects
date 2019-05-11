@@ -1,0 +1,87 @@
+html {
+	font-family: sans-serif;
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+	margin: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+
+
+.form-account-text {
+	width: 60%;
+	margin: 10% auto;
+}
+
+.rem {
+	font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+	outline: none;
+	font-family: caption;
+	border: 4px double #dedee0;
+	padding: 5px;
+	margin: 5% 0 0 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	border: 0 0 5px #000;
+	box-shadow: inset 0 0 10px #a1a1a1;
+}
+
+@media (min-width: 500px){
+	.login {
+		width: 500px;
+		height: 323px;
+	}
+	input[type="text"],
+	input[type="password"] {
+		width: 430px;
+		font-size: 20px;
+	}
+
+
+	.chk {
+		margin: 5% 0 0 0;
+	}
+	.rem {
+		margin: 5% 0 0 10px;
+	}
+}
+
+/* ----------------------------------------
+	Screen size less than 500px wide,
+	following styles will be applied.
+-----------------------------------------*/
+@media (max-width:499px) {
+	.login {
+		width: 300px;
+		height: 297px;
+		background-color: #eff0f2;
+	}
+	input[type="text"],
+	input[type="password"] {
+		width: 250px;
+		font-size: 15px;
+	}
+
+
+	.chk {
+		margin: 6% 0 0 0;
+	}
+	.rem {
+		margin: 6% 0 0 5%;
+	}
+}
